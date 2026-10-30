@@ -1,0 +1,26 @@
+# Node
+node_modules/
+.pnpm-store/
+dist/
+.turbo/
+*.log
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Env
+.env
+.env.local
+
+# Editors / OS
+.DS_Store
+.vscode/*
+!.vscode/extensions.json

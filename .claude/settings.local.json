@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node_modules/.bin/tsc -b)",
+      "Bash(node_modules/.bin/eslint .)",
+      "Bash(echo \"exit: $?\")"
+    ]
+  }
+}

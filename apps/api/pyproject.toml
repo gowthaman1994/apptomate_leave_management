@@ -1,0 +1,31 @@
+[project]
+name = "api"
+version = "0.1.0"
+description = "Apptomate Leave Management API"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi==0.162.0",
+    "uvicorn[standard]==0.54.0",
+    "pydantic==2.14.1",
+    "pydantic-settings==2.16.2",
+    "sqlalchemy==2.1.6",
+    "psycopg[binary]==3.3.6",
+    "bcrypt==5.0.0",
+    "PyJWT==2.15.1",
+    "cryptography==46.0.3",
+    "email-validator==2.3.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==8.3.3",
+    "httpx2==2.16.0",
+    "ruff==0.7.4",
+]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["app*"]
